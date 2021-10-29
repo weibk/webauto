@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>HKR系统测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-10-29 10:42:34</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:15.001807</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-10-29 17:09:09</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:18.078400</p>
 <p class='attribute'><strong>Status:</strong> Pass 2</p>
 
 <p class='description'>登录测试</p>
@@ -237,7 +237,26 @@ function showOutput(id, name) {
 
 <tr id='pt1.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_failed_2</div></td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: .
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
