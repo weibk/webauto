@@ -17,6 +17,6 @@ class TestLoginF(TestCase):
         driver = webdriver.Chrome()
         pageop = PageOp(driver)
         pageop.login(data1['username'], data1['password'])
-        result = pageop.get_success()
+        result = pageop.gte_failed()
         driver.quit()
         self.assertEqual(result, data1['except'])

@@ -12,9 +12,8 @@ import unittest
 class Report(Thread):
     """创建生成测试报告的类，接收两个参数，被测用例和生成报告的文件名
     """
-    def __init__(self, pattern, outname):
-        self.pattern = pattern
-        self.outname = outname
+    pattern = ''
+    outname = ''
 
     def run(self):
         tests = unittest.defaultTestLoader.discover(os.getcwd(),
@@ -25,4 +24,4 @@ class Report(Thread):
             verbosity=1,
             stream=open(self.outname, mode='w+', encoding='utf-8')
         )
-        runner.run()
+        runner.run(tests)

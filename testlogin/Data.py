@@ -11,7 +11,8 @@ class TestData(object):
         {'username': 'admin', 'password': 'root', 'except': 'Student Login'}
     ]
     data_failed = [
-        {'username': 'jason1', 'password': '1234567', 'except': 'Student '
-                                                                'Login'},
-        {'username': 'admin', 'password': 'root12', 'except': 'Student Login'}
+        {'username': 'jason1', 'password': '1234567',
+         'except': '账户名错误或密码错误!别瞎弄!'},
+        {'username': 'admin', 'password': 'root12',
+         'except': '账户名错误或密码错误!别瞎弄!'}
     ]

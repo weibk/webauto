@@ -9,7 +9,7 @@ class PageOp(object):
 
     def login(self, uname, pwd):
         self.driver.get('http://localhost:8080/HKR')
-        self.driver.maximize()
+        self.driver.maximize_window()
         self.driver.find_element_by_xpath("//*[@id='loginname']").send_keys(
             uname)
         self.driver.find_element_by_xpath("//*[@id='password']").send_keys(pwd)
